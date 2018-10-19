@@ -10,7 +10,7 @@ Package: libapache2-mod-authn-yolo
 Architecture: any
 Depends: ${misc:Depends}
 Description: Yolo authentication provider for Apache2
- The mod_authn_yolo module is an authentication provider for the Apache2. It
+ The authn_yolo module is an authentication provider for the Apache2. It
  accepts any combination of user and password.
  .
  Sometimes this is useful when testing or building a proof of concept, since
