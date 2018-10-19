@@ -1,3 +1,9 @@
+libapache2-mod-authn-yolo (1.0-1~mxbp9+1) stretch-backports; urgency=medium
+
+  * Rebuild for Stretch
+
+ -- Hans van Kranenburg <hans@knorrie.org>  Fri, 19 Oct 2018 19:06:18 +0200
+
 libapache2-mod-authn-yolo (1.0-1) unstable; urgency=medium
 
   * Initial release. (Closes: #XXXXXX)
