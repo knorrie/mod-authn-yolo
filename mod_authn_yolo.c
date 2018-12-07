@@ -17,16 +17,18 @@
 #include "ap_provider.h"
 #include "http_request.h"
 
-static authn_status authn_yolo(request_rec *r, const char* user,
-			       const char* password)
+
+
+static authn_status check_password(request_rec *r, const char* user,
+			           const char* password)
 {
 	return AUTH_GRANTED;
 }
 
 static const authn_provider authn_yolo_provider =
 {
-	&authn_yolo,
-	NULL
+	&check_password,
+	NULL,
 };
 
 static void register_hooks(apr_pool_t *p)
