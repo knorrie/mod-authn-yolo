@@ -1,5 +1,5 @@
-libapache2-mod-authn-yolo (1.0-1) unstable; urgency=medium
+libapache2-mod-authn-yolo (1.1-1) UNRELEASED; urgency=medium
 
   * Initial release. (Closes: #XXXXXX)
 
- -- Hans van Kranenburg <hans@knorrie.org>  Fri, 19 Oct 2018 17:37:05 +0200
+ -- Hans van Kranenburg <hans@knorrie.org>  Sun, 09 Dec 2018 15:12:19 +0100
