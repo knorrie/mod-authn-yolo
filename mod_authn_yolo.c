@@ -17,16 +17,18 @@
 #include "ap_provider.h"
 #include "http_request.h"
 
-static authn_status authn_yolo(request_rec *r, const char* user,
-			       const char* password)
+
+
+static authn_status check_password(request_rec *r, const char* user,
+			           const char* password)
 {
 	return AUTH_GRANTED;
 }
 
 static const authn_provider authn_yolo_provider =
 {
-	&authn_yolo,
-	NULL
+	&check_password,
+	NULL,
 };
 
 static void register_hooks(apr_pool_t *p)
@@ -37,7 +39,7 @@ static void register_hooks(apr_pool_t *p)
 				  AP_AUTH_INTERNAL_PER_CONF);
 }
 
-module AP_MODULE_DECLARE_DATA authn_yolo_module =
+AP_DECLARE_MODULE(authn_yolo) =
 {
 	STANDARD20_MODULE_STUFF,
 	NULL,		/* Per-directory configuration handler */
