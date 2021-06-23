@@ -5,8 +5,8 @@ Maintainer: Hans van Kranenburg <hans@knorrie.org>
 Build-Depends: debhelper-compat (= 12), dh-apache2, apache2-dev
 Standards-Version: 4.2.1.2
 Homepage: https://github.com/knorrie/mod-authn-yolo
-Vcs-Browser: https://github.com/knorrie/mod-authn-yolo
-Vcs-Git: https://github.com/knorrie/mod-authn-yolo.git
+Vcs-Browser: https://github.com/knorrie/mod-authn-yolo/tree/debian/master
+Vcs-Git: https://github.com/knorrie/mod-authn-yolo.git -b debian/master
 
 Package: libapache2-mod-authn-yolo
 Architecture: any
